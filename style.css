@@ -3,9 +3,7 @@ div.image{
 	content: src(\Images\burger.jpeg);
 	font-size: 10vw;
 }
-ul {
-  display:none;
-}
+
 .burger{
   display: block;
   float: right;
@@ -14,24 +12,31 @@ ul {
 .main-nav:hover ul{
     display:block;
 }
+
 ul{
+  display: none;
     list-style: none;
     clear: both;
     float: right;
     padding: 5px;
 }
+
 @media only screen and (min-width: 640px){
   .burger{
     display: none;
-    float: right;
-    width: 8vw;
   }
-  ul{
+  ul {
     display:block;
-
     list-style: none;
     clear: both;
     text-align: center;
+
+  }
+  div{
+    text-align: center;
+  }
+  header{
+    background-color: grey;
   }
 }
 
