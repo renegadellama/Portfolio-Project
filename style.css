@@ -1,7 +1,6 @@
 
-div.image{
-	content: src(\Images\burger.jpeg);
-	font-size: 10vw;
+h1{
+	clear: both;
 }
 
 .burger{
@@ -9,6 +8,7 @@ div.image{
   float: right;
   width: 8vw;
 }
+
 .main-nav:hover ul{
     display:block;
 }
@@ -17,8 +17,40 @@ ul{
   display: none;
     list-style: none;
     clear: both;
-    float: right;
-    padding: 5px;
+    width: 100%;
+    padding: 20px;
+		text-align: center;
+
+}
+
+li:hover{
+	background-color: red;
+}
+
+li{
+	margin-top: 5px;
+	padding: 10px;
+	max-width:90%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	border: solid;
+
+}
+
+.about-me{
+	text-align: center;
+	clear: both;
+	width: 100%;
+}
+.my-projects{
+	text-align: center;
+	clear: both;
+	width: 100%;
+}
+
+header{
+	background-color: grey;
 }
 
 @media only screen and (min-width: 640px){
@@ -30,18 +62,30 @@ ul{
     list-style: none;
     clear: both;
     text-align: center;
+		width: 100%;
+	clear:both;
+  }
 
-  }
-  div{
-    text-align: center;
-  }
+	li{
+		margin-top: 5px;
+		padding: 10px;
+		width:100%;
+		text-align: center;
+
+	}
+	li:hover {
+		background-color: red;
+	}
   header{
     background-color: grey;
+		text-align: center;
+		clear: both;
   }
-}
-
-
-
-h1 {
-  float: left;
+	/*nav {
+		text-align: center;
+		clear:both;
+	}*/
+	.about-me{
+		clear: both;
+	}
 }
