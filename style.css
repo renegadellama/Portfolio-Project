@@ -1,0 +1,86 @@
+
+h1{
+	clear: both;
+}
+
+.burger{
+  display: block;
+  float: right;
+  width: 8vw;
+}
+
+
+
+ul{
+  display: none;
+    list-style: none;
+    clear: both;
+    width: 100%;
+    padding: 20px;
+		text-align: center;
+
+}
+
+li:hover{
+	background-color: red;
+}
+
+li{
+	margin-top: 5px;
+	padding: 10px;
+	max-width:90%;
+	margin-left: auto;
+	margin-right: auto;
+	border: solid;
+
+}
+
+.about-me{
+	text-align: center;
+	clear: both;
+	width: 100%;
+}
+.my-projects{
+	text-align: center;
+	clear: both;
+	width: 100%;
+}
+
+header{
+	background-color: grey;
+}
+
+@media only screen and (min-width: 640px){
+  .burger{
+    display: none;
+  }
+
+  ul {
+    display:block;
+    list-style: none;
+    clear: both;
+    text-align: center;
+		width: 100%;
+	clear:both;
+  }
+
+	li{
+		margin-top: 5px;
+		padding: 10px;
+		width:100%;
+		text-align: center;
+
+	}
+	li:hover {
+		background-color: red;
+	}
+  header{
+    background-color: grey;
+		text-align: center;
+		clear: both;
+  }
+
+	.about-me{
+		clear: both;
+	}
+}
