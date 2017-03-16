@@ -49,6 +49,9 @@ li{
 header{
 	background-color: grey;
 }
+.main-nav:hover ul{
+     display:block;
+}
 
 @media only screen and (min-width: 640px){
   .burger{
