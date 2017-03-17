@@ -13,3 +13,34 @@ PortfolioData.prototype.toHtml = function() {
   $newProject.find('.date').text(this.date);
   return $newProject;
 };
+
+function showHome(){
+  $('#homeclick').on('click', function(){
+    $('.about-me').fadeOut();
+    $('.my-projects').fadeOut();
+  });
+}
+
+function showAbout(){
+  $('#aboutclick').on('click', function(){
+    $('.about-me').delay(500).fadeIn();
+    $('article.my-projects').fadeOut();
+  });
+};
+
+function showPortfolio(){
+  $('#projectclick').on('click', function(){
+    $('.my-projects').delay(500).fadeIn();
+    $('.about-me').fadeOut();
+  });
+}
+
+function hideOnLoad(){
+  $('.my-projects').hide();
+  $('.about-me').hide();
+}
+
+hideOnLoad();
+showHome();
+showAbout();
+showPortfolio();

@@ -1,13 +1,6 @@
-html{
-	background-image: url(/Images/brownpaper.jpg);
-	width: 100%;
-}
 
 h1{
 	clear: both;
-	font-family: 'Pirata One', cursive;
-	color: sandybrown;
-
 }
 
 .burger{
@@ -54,10 +47,7 @@ li{
 }
 
 header{
-	background-image: url(Images/woodtexture.jpg);
-	width: 80%;
-	text-align: center;
-	margin:auto;
+	background-color: grey;
 }
 .main-nav:hover ul{
      display:block;
