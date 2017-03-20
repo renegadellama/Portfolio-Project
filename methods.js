@@ -1,4 +1,6 @@
 'use strict';
+var source = $('.my-projects').html();
+var template = Handlebars.compile(source);
 
 PortfolioData.prototype.createImage = function(i) {
   var imageEl = document.createElement('img');
@@ -6,8 +8,8 @@ PortfolioData.prototype.createImage = function(i) {
 };
 
 PortfolioData.prototype.toHtml = function() {
-  var $newProject = $('article.about-me').clone().removeClass('about-me');
-  $newProject.find('h3').text(this.projName);
+  var $newProject = $('script.my-projects').clone().removeClass('my-projects');
+  $newProject.find('.my-title').text(this.projName);
   $newProject.find('.project-image').attr('src', this.icon);
   $newProject.find('.description').text(this.description);
   $newProject.find('.date').text(this.date);
@@ -24,7 +26,7 @@ function showHome(){
 function showAbout(){
   $('#aboutclick').on('click', function(){
     $('.about-me').delay(500).fadeIn();
-    $('article.my-projects').fadeOut();
+    $('.my-projects').fadeOut();
   });
 };
 
@@ -39,6 +41,8 @@ function hideOnLoad(){
   $('.my-projects').hide();
   $('.about-me').hide();
 }
+
+
 
 hideOnLoad();
 showHome();
