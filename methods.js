@@ -1,6 +1,7 @@
 'use strict';
 var source = $('.my-projects').html();
 var template = Handlebars.compile(source);
+var myProjects = [];
 
 PortfolioData.prototype.createImage = function(i) {
   var imageEl = document.createElement('img');
@@ -8,13 +9,15 @@ PortfolioData.prototype.createImage = function(i) {
 };
 
 PortfolioData.prototype.toHtml = function() {
-  var $newProject = $('script.my-projects').clone().removeClass('my-projects');
-  $newProject.find('.my-title').text(this.projName);
-  $newProject.find('.project-image').attr('src', this.icon);
-  $newProject.find('.description').text(this.description);
-  $newProject.find('.date').text(this.date);
-  return $newProject;
+  var source = $('script.my-projects').text();
+  var templateRender = Handlebars.compile(source);
+
+  return (templateRender(this));
 };
+
+projects.forEach(function(projectObject){
+  myProjects.push(new PortfolioData(projectObject));
+});
 
 function showHome(){
   $('#homeclick').on('click', function(){
@@ -41,8 +44,6 @@ function hideOnLoad(){
   $('.my-projects').hide();
   $('.about-me').hide();
 }
-
-
 
 hideOnLoad();
 showHome();
