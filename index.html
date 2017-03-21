@@ -31,6 +31,14 @@
         <li id="projectclick"><a>Projects</a></li>
       </ul>
       </nav>
+      <script class="my-projects" type="text/x-handlebars-template">
+        <h3 class="my-title" >{{projName}}</h3>
+          <div class="my-image">{{icon}}</div>
+          <div class="my-description">
+          <p>{{description}}</p>
+          <div class="my-link">
+          </div>
+      </script>
     </header>
   </div>
   <body>
@@ -40,12 +48,14 @@
     </div>
     <div class="my-articles"></div>
 
+
     <footer>
       <ul>
         <li>My <a href="https://github.com/renegadellama">GitHub</a> account.</li>
         <li>My <a href="https://www.linkedin.com/in/isak-swearingen-4208a280">LinkedIn</a> page.</li>
       </ul>
     </footer>
+
 
     <script src="index.js" type="text/javascript"></script>
     <script src="sourceData.js" type="text/javascript"></script>
