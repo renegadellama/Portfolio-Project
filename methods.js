@@ -1,6 +1,4 @@
 'use strict';
-var source = $('.my-projects').html();
-var template = Handlebars.compile(source);
 var myProjects = [];
 
 PortfolioData.prototype.createImage = function(i) {
@@ -9,7 +7,7 @@ PortfolioData.prototype.createImage = function(i) {
 };
 
 PortfolioData.prototype.toHtml = function() {
-  var source = $('script.my-projects').text();
+  var source = $('#project-template').text();
   var templateRender = Handlebars.compile(source);
 
   return (templateRender(this));
@@ -49,3 +47,7 @@ hideOnLoad();
 showHome();
 showAbout();
 showPortfolio();
+
+myProjects.forEach(function(a) {
+  $('.my-articles').append(a.toHtml());
+});
