@@ -19,6 +19,14 @@
         <li id="projectclick"><a>Projects</a></li>
       </ul>
       </nav>
+      <script class="my-projects" type="text/x-handlebars-template">
+        <h3 class="my-title" >{{projName}}</h3>
+          <div class="my-image">{{icon}}</div>
+          <div class="my-description">
+          <p>{{description}}</p>
+          <div class="my-link">
+          </div>
+      </script>
     </header>
   </div>
   <body>
@@ -27,14 +35,7 @@
     <p>Here will be a short bio</p>
   </div>
 
-  <script class="my-projects">
-    <h3 class="my-title">{{projName}}</h3>
-      <div class="my-image">{{icon}}</div>
-      <div class="my-description">
-      <p>{{description}}</p>
-      <div class="my-link">
-      </div>
-  </script>
+
 
   <footer>
     <ul>
