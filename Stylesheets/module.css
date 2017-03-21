@@ -1,0 +1,28 @@
+/*header{
+	background-image: url(Images/woodtexture.jpg);
+}*/
+
+h1{
+	clear: both;
+	font-family: 'Pirata One', cursive;
+	color: sandybrown;
+
+}
+
+.main-nav:hover ul{
+     display:block;
+}
+
+li:hover{
+	background-color: red;
+}
+
+.burger{
+  display: block;
+  float: right;
+  width: 8vw;
+}
+
+#project-template {
+	display: none;
+}
