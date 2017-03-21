@@ -4,9 +4,21 @@
     <meta charset="utf-8">
     <title>Isak Swearingen's Portfolio</title>
       <meta name="viewport" content="width=device-width, initial-scale=1">
-      <link rel="stylesheet" href="normalize.css">
+      <link rel="stylesheet" href="Stylesheets/vendor/normalize.css">
       <link rel="stylesheet" href="style.css">
       <link href="https://fonts.googleapis.com/css?family=Pirata+One" rel="stylesheet">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
+      <!-- template -->
+      <script type="text/x-handlebars-template" id="project-template">
+        <h3 class="my-title">{{projName}}</h3>
+        <div class="my-image">{{icon}}</div>
+        <div class="my-description">
+          <p>{{description}}</p>
+        </div>
+        <div class="my-link"></div>
+      </script>
+
   </head>
   <div class="navbar">
     <header>
@@ -23,29 +35,20 @@
   </div>
   <body>
     <div class="about-me">
-    <h3 id="aboutmelink">About Me</h3>
-    <p>Here will be a short bio</p>
-  </div>
+      <h3 id="aboutmelink">About Me</h3>
+      <p>Here will be a short bio</p>
+    </div>
+    <div class="my-articles"></div>
 
-  <script class="my-projects">
-    <h3 class="my-title">{{projName}}</h3>
-      <div class="my-image">{{icon}}</div>
-      <div class="my-description">
-      <p>{{description}}</p>
-      <div class="my-link">
-      </div>
-  </script>
+    <footer>
+      <ul>
+        <li>My <a href="https://github.com/renegadellama">GitHub</a> account.</li>
+        <li>My <a href="https://www.linkedin.com/in/isak-swearingen-4208a280">LinkedIn</a> page.</li>
+      </ul>
+    </footer>
 
-  <footer>
-    <ul>
-      <li>My <a href="https://github.com/renegadellama">GitHub</a> account.</li>
-      <li>My <a href="https://www.linkedin.com/in/isak-swearingen-4208a280">LinkedIn</a> page.</li>
-    </ul>
-  </footer>
-  </body>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.6/handlebars.js"></script>
     <script src="index.js" type="text/javascript"></script>
     <script src="sourceData.js" type="text/javascript"></script>
     <script src="methods.js" type="text/javascript"></script>
+  </body>
 </html>
