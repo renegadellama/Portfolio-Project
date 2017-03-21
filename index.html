@@ -15,7 +15,7 @@
       <!-- template -->
       <script type="text/x-handlebars-template" id="project-template">
         <h3 class="my-title">{{projName}}</h3>
-        <div class="my-image">{{icon}}</div>
+        <a href="{{link}}"><img src="{{icon}}"></a>
         <div class="my-description">
           <p>{{description}}</p>
         </div>
@@ -23,6 +23,7 @@
       </script>
 
   </head>
+  <body>
   <div class="navbar">
     <header>
       <h1 id="topscreen">Isak Swearingen's Project Portfolio</h1>
@@ -34,17 +35,9 @@
         <li id="projectclick"><a>Projects</a></li>
       </ul>
       </nav>
-      <script class="my-projects" type="text/x-handlebars-template">
-        <h3 class="my-title" >{{projName}}</h3>
-          <div class="my-image">{{icon}}</div>
-          <div class="my-description">
-          <p>{{description}}</p>
-          <div class="my-link">
-          </div>
-      </script>
     </header>
   </div>
-  <body>
+
     <div class="about-me">
       <h3 id="aboutmelink">About Me</h3>
       <p>Here will be a short bio</p>

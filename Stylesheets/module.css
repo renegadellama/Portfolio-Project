@@ -6,6 +6,8 @@ h1{
 	clear: both;
 	font-family: 'Pirata One', cursive;
 	color: sandybrown;
+	font-size: 6vw;
+	padding-top: 8%;
 
 }
 
@@ -13,7 +15,7 @@ h1{
      display:block;
 }
 
-li:hover{
+main-nav li:hover{
 	background-color: red;
 }
 
@@ -23,6 +25,24 @@ li:hover{
   width: 8vw;
 }
 
-#project-template {
-	display: none;
+img {
+	height: 12vw;
+	width: 12vw;
+	border: solid;
+	border-color: black;
+
+}
+.my-articles {
+text-align: center;
+clear: both;
+}
+.my-articles h3{
+	font-family: 'Pirata One', cursive;
+	font-size: 50px;
+}
+
+@media only screen and (min-width: 640px){
+  .burger{
+    display: none;
+  }
 }

@@ -1,10 +1,6 @@
 'use strict';
 var myProjects = [];
 
-PortfolioData.prototype.createImage = function(i) {
-  var imageEl = document.createElement('img');
-  return imageEl;
-};
 
 PortfolioData.prototype.toHtml = function() {
   var source = $('#project-template').text();
@@ -27,20 +23,19 @@ function showHome(){
 function showAbout(){
   $('#aboutclick').on('click', function(){
     $('.about-me').delay(500).fadeIn();
-    $('.my-projects').fadeOut();
+    $('.my-articles').fadeOut();
   });
 };
 
 function showPortfolio(){
   $('#projectclick').on('click', function(){
-    $('.my-projects').delay(500).fadeIn();
+    $('.my-articles').delay(500).fadeIn();
     $('.about-me').fadeOut();
   });
 }
 
 function hideOnLoad(){
-  $('.my-projects').hide();
-  $('#project-template').hide();
+  $('.my-articles').hide();
   $('.about-me').hide();
 }
 
