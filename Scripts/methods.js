@@ -9,9 +9,7 @@ PortfolioData.prototype.toHtml = function() {
   return (templateRender(this));
 };
 
-projects.forEach(function(projectObject){
-  myProjects.push(new PortfolioData(projectObject));
-});
+
 
 function showHome(){
   $('#homeclick').on('click', function(){
@@ -43,7 +41,3 @@ hideOnLoad();
 showHome();
 showAbout();
 showPortfolio();
-
-myProjects.forEach(function(a) {
-  $('.my-articles').append(a.toHtml());
-});
