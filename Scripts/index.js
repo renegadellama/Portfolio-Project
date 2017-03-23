@@ -1,5 +1,4 @@
 'use strict';
-var portfolio = [];
 
 function PortfolioData(obj){
   this.projName = obj.projName;
