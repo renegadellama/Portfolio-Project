@@ -1,6 +1,18 @@
 'use strict';
+
 var myProjects = [];
 
+function makeStrings(){
+  $.getJSON('/Server/stringData.json', function(myData){
+    myData.forEach(function(projectObject){
+      myProjects.push(new PortfolioData(projectObject));
+      myProjects.forEach(function(x) {
+        $('.my-articles').append(x.toHtml());
+      });
+    });
+  console.log(myData);
+  });
+};
 
 PortfolioData.prototype.toHtml = function() {
   var source = $('#project-template').text();
@@ -9,7 +21,7 @@ PortfolioData.prototype.toHtml = function() {
   return (templateRender(this));
 };
 
-
+makeStrings();
 
 function showHome(){
   $('#homeclick').on('click', function(){

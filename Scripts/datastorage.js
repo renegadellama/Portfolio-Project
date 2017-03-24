@@ -10,12 +10,11 @@ function makeStrings(){
   $.getJSON('/Server/stringData.json', function(myData){
     myData.forEach(function(projectObject){
       myProjects.push(new PortfolioData(projectObject));
-      myProjects.forEach(function(a) {
-        $('.my-articles').append(a.toHtml());
+      myProjects.forEach(function(x) {
+        $('.my-articles').append(x.toHtml());
       });
     });
   console.log(myData);
-
   });
 };
 
