@@ -1,5 +1,15 @@
 'use strict';
 
-const pg = require('pg'); // 3rd party package
-const fs = require('fs'); // native Node
-const express = require('express'); // 3rd party package
+const express = require('express');
+const PORT = process.env.PORT || 3000;
+const app = express();
+
+app.use(express.static('./'));
+
+app.get('/', function(request, response){
+  response.sendFile('index.html', {root: '.'});
+});
+
+app.listen(PORT, function(){
+  console.log(`Server running on ${PORT}`);
+});
