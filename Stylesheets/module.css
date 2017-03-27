@@ -7,12 +7,16 @@ h1{
 
 }
 
+/*header{
+	border: solid;
+}*/
+
 .main-nav:hover ul{
      display:block;
 }
 
 main-nav li:hover{
-	background-color: red;
+	background-color: #4583e8;
 }
 
 .burger{
