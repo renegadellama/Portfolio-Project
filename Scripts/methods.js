@@ -13,7 +13,7 @@ function makeStrings(){
   console.log(myData);
   });
 };
-
+//note
 PortfolioData.prototype.toHtml = function() {
   var source = $('#project-template').text();
   var templateRender = Handlebars.compile(source);
