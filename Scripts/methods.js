@@ -7,10 +7,10 @@ function makeStrings(){
     myData.forEach(function(projectObject){
       myProjects.push(new PortfolioData(projectObject));
     });
-      myProjects.forEach(function(x) {
-        $('.my-articles').append(x.toHtml());
+    myProjects.forEach(function(x) {
+      $('.my-articles').append(x.toHtml());
     });
-  console.log(myData);
+    console.log(myData);
   });
 };
 

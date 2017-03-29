@@ -13,10 +13,10 @@ PortfolioData.fetchAll = function() {
     var newData = JSON.parse(localStorage.rawData);
 
     PortfolioData.loadAll(newData);
-      articleView.initIndexPage();
+    articleView.initIndexPage();
   } else {
     $.getJSON('/Server/stringData.json').then(function(data){
-      localStorage.rawData =  JSON.stringify(data);
+      localStorage.rawData = JSON.stringify(data);
       var newData = JSON.parse(localStorage.rawData);
       PortfolioData.loadAll(newData).toHtml();
       articleView.initIndexPage();
