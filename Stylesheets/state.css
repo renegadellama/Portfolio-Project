@@ -9,7 +9,7 @@
     clear: both;
     text-align: center;
 		width: 100%;
-	clear:both;
+	  clear:both;
   }
 
 	li{
@@ -17,10 +17,11 @@
 		padding: 10px;
 		width:100%;
 		text-align: center;
+    display: inline;
 
 	}
 	li:hover {
-		background-color: red;
+		background-color: sandybrown;
 	}
   header{
     background-color: grey;
