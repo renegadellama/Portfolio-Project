@@ -7,11 +7,16 @@ h1{
 
 }
 
+/*header{
+	border: solid;
+}*/
+
 .main-nav:hover ul{
      display:block;
 }
 
 main-nav li:hover{
+	background-color: #4583e8;
 	background-color: sandybrown;
 }
 

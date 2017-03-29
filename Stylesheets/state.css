@@ -21,8 +21,10 @@
 
 	}
 	li:hover {
+		background-color: #254477;
 		background-color: sandybrown;
 	}
+
   header{
     background-color: grey;
 		text-align: center;
