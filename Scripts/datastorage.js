@@ -1,5 +1,5 @@
 'use strict';
-(function(method){
+(function(module){
 
   PortfolioData.loadAll = function() {
     rawData.map(function(ele) {
@@ -22,5 +22,5 @@
       });
     }
   };
-  method.PortfolioData = PortfolioData;
+  module.PortfolioData = PortfolioData;
 }(window));
