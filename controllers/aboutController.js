@@ -5,6 +5,7 @@
 
   aboutController.index = () => {
     $('.my-articles').hide();
+    $('.project-template').hide();
     $('.about-me').show();
   };
   module.aboutController = aboutController;
