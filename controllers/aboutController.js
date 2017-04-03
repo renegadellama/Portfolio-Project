@@ -4,7 +4,7 @@
   const aboutController = {};
 
   aboutController.index = () => {
-    $('.my-projects').hide();
+    $('.my-articles').hide();
     $('.about-me').show();
   };
   module.aboutController = aboutController;

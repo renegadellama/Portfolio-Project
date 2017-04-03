@@ -13,3 +13,11 @@ app.get('/', function(request, response){
 app.listen(PORT, function(){
   console.log(`Server running on ${PORT}`);
 });
+
+// function proxyGitHub(request, response) {
+//   console.log('Routing GitHub request for', request.params[0]);
+//   (requestProxy({
+//     url: `https://api.github.com/${request.params[0]}`,
+//     headers: {Authorization: `token ${process.env.GITHUB_TOKEN}`}
+//   }))(request, response);
+// }
